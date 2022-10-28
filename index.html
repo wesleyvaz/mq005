@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botiquim da Esquina</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Botiquim da Esquina</a></h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="pizzas.html" rel="next">Pizzas</a></li>
+                <li><a href="sanduiche.html">Sanduíches</a></li>
+                <li><a href="#">Bebidas</a></li>
+                <li><a href="#">Porções</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+             <h2><p>Nós amamos fazer aniversário, mas mais do que isso: amamos planejar, organizar e realizar a SUA comemoração de vida. Por todos os anos serem únicos e os aniversários só acontecerem uma vez a cada 365 dias, nós acreditamos fielmente que datas especiais merecem comemorações especiais.</p> 
+            <p>
+                GANHE 01 BALDE COM
+                    04 CERVEJAS PETRA 600ml
+                    10 amigos comparecendo em lista. <br>
+            </p>
+                
+                <p>
+                    GANHE 01 GARRAFA DE VODKA OU 02 BALDES COM
+                    04 CERVEJAS PETRA 600ml
+                    20 amigos comparecendo em lista. <br>
+                </p>
+                
+                <p>
+                    GANHE 01 GARRAFA DE RED LABEL OU 03 BALDES COM
+                    04 CERVEJAS PETRA 600ml
+                    30 amigos comparecendo em lista.
+                </p>
+        </h2>
+        </article>
+    </main>
+    <script>
+        function clickMenu(){
+           if(itens.style.display =='block')  {
+            itens.style.display = 'none'
+           } else {
+            itens.style.display = 'block'
+
+           }
+           
+           
+        }
+    </script>
+<a href="index.html">Inicio</a>
+</body>
+</html>
