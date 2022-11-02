@@ -7,7 +7,8 @@
 
 
 body, html{
-    background-color: lightgreen;
+    min-height: 100vh;
+    
 
 }
 body header h1 a{
@@ -15,22 +16,58 @@ body header h1 a{
     color: white;
 }
 header {
-    background-color: green;
+    background-color:yellow;
 }
 header> h1{
     background-color: red;
     padding: 10px;
     text-align: center;
+    text-transform: uppercase;
 }
+section{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    line-height: 2em;
+    padding-left: 10px;
+
+}
+section.normal {
+    background-color: white
+}
+section.imagem{
+    background-color: darkgoldenrod;
+    color: black;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.692);
+    background-attachment: fixed;
+}
+section.imagem> p {
+    width: 280px;
+    background-color: rgba(0, 0, 0, 0.11);
+    text-shadow: 9px 0px 10px;
+    color: white;
+}
+section#img01 {
+    background-image: url(Balão.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+section#img02 {
+    background-image: url(festa.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+
 i#burguer{
-    background-color: rgb(3, 39, 3);
+    background-color: rgba(0, 0, 0, 0.562);
+    border-radius: 10px 10px;
     display: block;
     color: white;
-    padding: 30px;
+    padding: 10px;
 }
 i#burguer:hover{
     background-color: rgba(66, 194, 66, 0.596);
-    color: black;
+    border-radius: 10px 10px;
+    color: rgba(0, 0, 0, 0.329);
     cursor: pointer;
 }
 menu {
@@ -57,7 +94,7 @@ main {
     background-color: white;
     margin: auto;
     margin-top: 10px;
-    padding: 15px;
+    padding: 05px;
     border-radius: 10px;
 
 }

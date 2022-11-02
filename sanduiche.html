@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      
     <title>Sabores dos Sanduiches</title>
     <style>
         body {
@@ -22,10 +25,65 @@
         body h1{
             color: red;
         }
+        
+i#burguer{
+    background-color: rgba(0, 0, 0, 0.089);
+    border-radius: 10px 10px;
+    display: block;
+    color: white;
+    padding: 10px;
+}
+i#burguer:hover{
+    background-color: rgba(194, 186, 66, 0.295);
+    border-radius: 10px 10px;
+    color: black;
+    cursor: pointer;
+}
+menu {
+    display: none;
+}
+menu> ul {
+    list-style-type: none;
+}
+menu> ul> li> a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    background-color: rgb(6, 63, 6);
+    color: white;
+    text-align: cente;
+    border-top: 2px solid;
+
+}
+menu> ul> li> a:hover {
+    background-color: rgba(0, 128, 0, 0.466);
+}
     </style>
 </head>
 <body>
-    <h1>Nome do Estabelecimento</h1>
-<a href="index.html">Voltar</a>
+    <header>
+        
+        <i  id="burguer"  class="material-icons" onclick="clickMenu()">menu </i> 
+        <menu id="itens"> 
+            <ul> 
+                <li><a href="pizzas.html" rel="next">Pizzas</a></li>
+                <li><a href="sanduiche.html">Sanduíches</a></li>
+                <li><a href="bebidas.html">Bebidas</a></li>
+                <li><a href="porcoes.html">Porções</a></li>
+            </ul>
+        </menu>
+    </header>
+    <script>
+        function clickMenu(){
+           if(itens.style.display =='block')  {
+            itens.style.display = 'none'
+           } else {
+            itens.style.display = 'block'
+
+           }
+           
+           
+        }
+    </script>
 </body>
 </html>
