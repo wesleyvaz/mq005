@@ -16,7 +16,7 @@ body header h1 a{
     color: white;
 }
 header {
-    background-color:yellow;
+    background-color:paleturquoise;
 }
 header> h1{
     background-color: red;
@@ -36,13 +36,13 @@ section.normal {
 }
 section.imagem{
     background-color: darkgoldenrod;
-    color: black;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.692);
+    color: rgb(0, 0, 0);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.712);
     background-attachment: fixed;
 }
 section.imagem> p {
     width: 280px;
-    background-color: rgba(0, 0, 0, 0.11);
+    background-color: rgba(0, 0, 0, 0.301);
     text-shadow: 9px 0px 10px;
     color: white;
 }
@@ -62,10 +62,10 @@ i#burguer{
     border-radius: 10px 10px;
     display: block;
     color: white;
-    padding: 10px;
+    padding: px;
 }
 i#burguer:hover{
-    background-color: rgba(66, 194, 66, 0.596);
+    background-color: #daa520;
     border-radius: 10px 10px;
     color: rgba(0, 0, 0, 0.329);
     cursor: pointer;
@@ -106,4 +106,4 @@ article> p {
     text-align: justify;
     margin-bottom: 10px;
     text-indent: 20px;
-}
+}<z
