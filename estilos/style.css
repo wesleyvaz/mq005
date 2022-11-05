@@ -65,9 +65,9 @@ i#burguer{
     padding: px;
 }
 i#burguer:hover{
-    background-color: #daa520;
+    background-color: white;
     border-radius: 1px 1px;
-    color: rgba(0, 0, 0, 0.329);
+    color: rgba(0, 0, 0, 0.822);
     cursor: pointer;
 }
 menu {
@@ -75,19 +75,25 @@ menu {
 }
 menu> ul {
     list-style-type: none;
+    
 }
-menu> ul> li> a {
+menu ul li {
     display: block;
-    padding: 15px;
+    padding: 30px;
     text-decoration: none;
-    background-color: rgb(6, 63, 6);
+    background-color: green;
     color: white;
-    text-align: cente;
-    border-top: 2px solid;
+    text-align: center;
+    border-top: 2px solid;text-decoration: none;
 
 }
 menu> ul> li> a:hover {
     background-color: rgba(0, 128, 0, 0.466);
+}
+menu a {
+    text-decoration: none;
+    color: red;
+    padding: 10px;
 }
 main {
     width: 80vw;
@@ -106,4 +112,4 @@ article> p {
     text-align: justify;
     margin-bottom: 10px;
     text-indent: 20px;
-}<z
+}

@@ -4,73 +4,172 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porções</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    rel="stylesheet">
+    <title>Porções</title>
     <style>
-        body
-        {
-            background-image: url(Cardápio\ para\ restaurantes\ e\ lanchonetes\ simples\ vermelho.png);
+        body {
             height: 98vh;
-            color: white;
-            
-            top: 3%;
-
+            background: url(Cardápio\ para\ restaurantes\ e\ lanchonetes\ simples\ vermelho.png);
             background-size: 100% 100%;
-
+            
+        
+            color: white;
         }
         body a {
-            color: red;
-            text-decoration: none;
-            position: absolute;
-            top: 99%;
-            left: 80%;
-            
-        }
-        body h1 {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 27px;
+            color: white;
+            text-decoration: none;   
         }
         .container {
             position: absolute;
-            top: 9%;
-            left: 50% ;
+            top: 10%;
+            left: 75%;
+            transform: translate(-50%, );
         }
-        i#burguer{
-            background-color: rgba(201, 120, 120, 0.089);
-            border-radius: 10px 10px;
+        button {
+            display: inline-block;
+            position: relative;
+            background: none;
+            color: #fff;
+            font-size: 12px;
+            cursor: pointer;
+            margin: 10px 30px;
+            background: #1a2929;
+        }
+        span {
             display: block;
-            color: white;
-            padding: 5px;
             
         }
-        i#burguer:hover{
-            background-color: rgba(181, 184, 17, 0.384);
-            border-radius: 5px 5px;
-            color: red;
-            cursor: pointer;
-            }
-    </style>
+        
+        
+        header h1 {
+            
+            padding: 1px;
+            margin-top: px;
+            border-radius: 10px 10px;
+        }
+        
+i#burguer{
+    position: absolute;
+    background-color: rgba(201, 120, 120, 0.089);
+    border-radius: 10px 10px;
+    display: block;
+    color: white;
+    padding: 1px;
+    
+    
+}
+i#burguer:hover{
+    background-color: rgba(181, 184, 17, 0.384);
+    border-radius: 5px 5px;
+    color: red;
+    cursor: pointer;
+    
+}
+nav a {
+    background-color: rgba(255, 0, 0, 0.158);
+    padding: 5px;
+    color: black;
+    border-radius: 10px;   
+    
+}
+header nav menu a {
+    
+
+
+    
+
+background-color: rgba(241, 218, 14, 0.664);
+padding: 3px;
+
+}
+button::before,
+button::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #54e6e7;
+}
+span::before,
+span::after{
+    content: "";
+    width: 2px;
+    height: 0;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #54e6e7;
+
+}
+button:hover::before,
+button::after{
+    width: 100%;
+}
+button:hover span::before,
+button:after span::after {
+    height: 100%;
+}
+button::after {
+    right: 0;
+    bottom: 0;
+    transition-duration: 0.4s;
+}
+button span::after {
+    right: 0;
+    bottom: 0;
+    transition-duration: 0.4s;
+}
+button::before {
+    left: 0;
+    top: 0;
+    transition-duration: 0.4s;
+}
+button span::before {
+    left: 0.s;
+    top: 0;
+    transition-duration: 0.4s;
+
+}
+</style>
 </head>
 <body>
-    <H1>Nome do Estabecimento</H1>
-    <div class="container">
-        <button>
-            <span>Voltar<a href="index.html">bnm</a></span>
-        </button>
-    </div>
-    <header>
+<header>
+<h1><a href="index.html"> NOME</a></h1>
+<nav>
+    <i  id="burguer"  class="material-icons" onclick="clickMenu()">menu  </i>
+    <menu id="itens">
         
-        <i  id="burguer"  class="material-icons" onclick="clickMenu()">menu</i> 
-        <menu id="itens"> 
-             
-                
-                <a href="sanduiche.html">Sanduíches</a>
-             <a href="bebidas.html">Bebidas</a>
-            <a href="porcoes.html">Porções</a>
-            
-        </menu>
-    </header>
-</body>
+            <a href="sanduiche.html">Sanduíches</a>
+            <a href="bebidas.html">Bebidas</a>
+    <a href="porcoes.html">Porções</a>
+    </menu>
+</nav>
+</header>
+<div class="container">
+<button>
+    <span><a href="index.html">Voltar</a></span>
+</button>
 
+</div>
+<script>
+function clickMenu(){
+   if(itens.style.display =='block')  {
+    itens.style.display = 'none'
+   } else {
+    itens.style.display = 'block'
+
+   }
+   
+   
+}        
+</script>
+
+   
+
+
+<footer>  </footer>
+<menu> 
+<a href="index.html"></a>
+</menu>
 </html>
